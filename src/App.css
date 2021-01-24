@@ -1,38 +1,50 @@
-.App {
+
+/* css for nav bar */
+.navbar{
+    height: 12vh;
+    background-color: lightslategray;
+}
+
+
+.cart{
+    float: right;
+    margin-top: -60px;
+}
+
+.search{
   text-align: center;
+  padding-top: 7px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.CardContainer{
+    display:inline-flex;
+    flex-wrap: wrap;
+    gap: 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.pagination{
+    float: right;
+    margin: 30px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/* .filter{
+    border: 2px solid grey;
+    margin-right: 20px;
+} */
+
+
+@media screen and (max-width:480px){
+    .search{
+        float: left;
+        padding-top: 7px;
+      }
+
+      .cart{
+        float: right;
+        margin-top: 0px;
+    }
 }
 
-.App-link {
-  color: #61dafb;
-}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+
+
